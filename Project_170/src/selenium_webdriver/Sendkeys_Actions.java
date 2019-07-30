@@ -5,7 +5,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Sendkeys_Actions {
+public class Sendkeys_Actions 
+{
 
 	public static void main(String[] args)
 	{
@@ -26,7 +27,7 @@ public class Sendkeys_Actions {
 		
 		
 		//Select dropdown using keyboard shortcut
-		driver.findElement(By.id("day")).sendKeys("15");
+		driver.findElement(By.id("day")).sendKeys("aa");
 		
 		
 		//Select dropdown using keyboard shortcut
