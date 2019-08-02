@@ -132,7 +132,7 @@ new Select(webelement).deselectbyValue("optionvalue");
 Example:---> How to Deselect all options from selection
 
 Syntax:--->
-                  new Select(webelement).deselectall();
+                 new Select(webelement).deselectall();
 
 
 	Note:---> all deselect options will be performed on

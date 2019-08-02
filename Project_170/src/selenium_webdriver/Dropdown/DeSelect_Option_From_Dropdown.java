@@ -6,14 +6,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Verify_Drodpown_Multiple_Selection {
+public class DeSelect_Option_From_Dropdown 
+{
 
 	public static void main(String[] args) 
 	{
-		/*
-		 * Testcase:--> Verify dropdown accept maximum selection up to 3.
-		 */
-		
 		//Locate chrome browser in currnet system
 		System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();  //Launch browser
@@ -29,7 +26,7 @@ public class Verify_Drodpown_Multiple_Selection {
 
 		
 		
-
+		//Method verify Dropdown selection type single/multiple
 		boolean flag=new Select(driver.findElement(By.id("customState")))
 				.isMultiple();
 		
@@ -46,9 +43,24 @@ public class Verify_Drodpown_Multiple_Selection {
 			
 			//Find dropdown selection list
 			int Count=State_dropdown.getAllSelectedOptions().size();
+			
 			if(Count==3)
 			{
 				System.out.println("Testpass, Selection meet expected count");
+				
+						//Deselect single option
+						State_dropdown.deselectByIndex(4);
+						
+						//Get All Selected Options
+						int Dcount=State_dropdown.getAllSelectedOptions().size();
+						if(Dcount==2)
+						{
+							System.out.println("TestPass:--> User able to modify selection");
+						}
+						else
+						{
+							System.out.println("TestFail:--> Count mismatch fail to modify search");
+						}
 			}
 			else
 			{
