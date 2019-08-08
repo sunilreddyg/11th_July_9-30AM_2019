@@ -23,7 +23,8 @@ CssSelector:-->
 
 
 Default_css:-->
-	Default css target object with only   ID and Class property [optionally tagname]
+	Default css target object with only   
+	ID and Class property [optionally tagname]
 
 
 	htmlsource:-->
@@ -41,9 +42,9 @@ Default_css:-->
 
 		Note:--> During Default cssSelector   
 				# refer IDproperty
-			                .  refer Class Property
+			    . refer Class Property
 
-	   	Identyfy location with ID an class Property.
+	 Identyfy location with ID an class Property combination.
 			Syntax:===> tagname#ID.Classname
 
 		driver.findElement(By.cssSelector("input#email.login"));

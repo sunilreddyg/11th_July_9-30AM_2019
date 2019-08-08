@@ -6,7 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Identify_Elements_with_Class_Property {
+public class Identify_Elements_with_Class_Property 
+{
 
 	public static void main(String[] args)
 	{
