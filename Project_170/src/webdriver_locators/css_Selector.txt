@@ -90,7 +90,6 @@ CssAttribute syntax:-->
 		By.cssSelector("div[type='submit']")
 
 Other than id unique attributes Developer follow:-->
-		ID
 		Name
 		aria-label
 		placeholder
@@ -113,7 +112,7 @@ page htmlsource:--->
 
 Identify 3rd element:--->
 		
-			By.cssSelector(div[id='x'][type='C'])
+			By.cssSelector("div[id='X'][type='C']")
 ================================================================
 Dynamic Css:-->
 	Target Web element location with partial attributes.
@@ -125,7 +124,7 @@ Dynamic Css:-->
 Example:--> target element with matching characters
 
 	Manual Browser         :-->   <input  id="687dg_email_987jjhf"></input>
-	Automation Browser :-->   <input  id="54fsdf_email_34534"></input>
+	Automation Browser     :-->   <input  id="54fsdf_email_34534"></input>
 
 
 		by.cssSelector("input[id*='email']")
