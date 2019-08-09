@@ -133,7 +133,7 @@ Example:--> target element with matching characters
 Example:--> target element with start characters
 
 	Manual Browser         :-->   <input  id="email_987jjhf"></input>
-	Automation Browser :-->   <input  id="email_34534"></input>
+	Automation Browser 	   :-->   <input  id="email_34534"></input>
 
 
 		by.cssSelector("input[id^='email']")
@@ -141,7 +141,7 @@ Example:--> target element with start characters
 Example:--> target element with end characters
 
 	Manual Browser         :-->   <input  id="987jjhfemail"></input>
-	Automation Browser :-->   <input  id="34534email"></input>
+	Automation Browser     :-->   <input  id="34534email"></input>
 
 
 		by.cssSelector("input[id$='email']")
