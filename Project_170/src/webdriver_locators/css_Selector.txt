@@ -159,11 +159,12 @@ HtmlSource:-->
 	Syntax:-->
 		parentnode  > childnode...
 
-		By.cssSelector("div[id='login_conainer'] >  input[type='text']")
+		By.cssSelector("div[id='login_conainer'] >  input")
 
 ====================================================================
 
-HtmlSource:-->
+HtmlSource:--> parent and child identification using  <<SPACE>>
+			   It identify matching descendent under parent..
 	
 	<div id="login_conainer"  class="demo">
 		<div class="demo">
@@ -171,8 +172,28 @@ HtmlSource:-->
 		</div>
 	</div>	
 
-
 Syntax:-->
 		parentnode  <space> childnode...
 
 		By.cssSelector("div[id='login_conainer']  input")
+====================================================================
+HtmlSource:--> Identify Required node with help of sibling node..
+
+	<div class="demo">
+		<label id="email-login"> <label>
+		<input id="9ju7yg876"  type="text">  ---->Target Element
+	</div>	
+
+
+
+		By.cssSelector("label[id='email-login'] + input")
+
+
+
+
+
+
+
+
+
+
