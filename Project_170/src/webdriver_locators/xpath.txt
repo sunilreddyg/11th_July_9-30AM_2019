@@ -1,0 +1,84 @@
+Xpath:-->
+
+	Xpath is a native location identification at webpages. Xpath
+	Identify locations at webpage using backend html source.
+
+
+	1. Absolute xpath
+	2. Relative Xpath
+
+
+Xpath Attribute :-->
+	Below syntax idefity location at webpage using unique attributes..
+
+	//tagname[@Attributename =  'Attribute value']
+	//*[@Attributename =  'Attribute value']
+
+
+
+	// => Current Node
+	/   => RootNode
+	tagname=>  only selected tag element
+	*   => All elements under current node.
+	[]  => Allow multiple attributes to define
+	@  => Only Attributes ---> Refer attribute at html node
+	
+Html Source:-->
+
+	<input  id="email"  class="user_email_login"  placeholder="Enter name"></input>
+
+
+	//input[@id='email']
+	//input[@class='user_email_login']
+	//input[@placeholder='Enter name']
+============================================================
+
+Xpath text:-->
+	Below syntax identify location using element text.
+
+	//tagname[text()='Element Text']
+	//tagname[.='Element Text']
+
+	text() --> Refer element text
+	.        --> Refer element text.
+
+Html Source:-->
+
+	<span class="header" > Create Account </span>
+
+
+	//span[text()='Create Account']
+	//span[.='Create Account']
+
+=================================================================
+Dynamic Xpath:-->
+	identify location using partial attributes or text.
+
+Syntax:-->
+		Recognize object using matching characters
+			//tagname[contains(@prop , 'match characters')]
+			//tagname[contains(text() , 'partial visibletext')]
+			
+		Recognize object using parital attribute or text using start characters
+		
+			//tagname[starts-with(@prop , 'pvalue')]
+			//tagname[starts-with(text() , 'text start chars')]
+			
+		Recognize object using parital attribute or text using end characters
+		
+			//tagname[ends-with(@prop , 'pvalue')]
+			//tagname[ends-with(text() , 'text end chars')]	
+
+=================================================================..
+Example:--> Target Element with partial attribute properites
+
+Manual Browser session:-->
+			id="email_987fsdlsjlksdjflsdjf"
+Automation browser session:-->
+			id="email_jflsdsdoijflksdjlsd"
+
+
+	       		//*[contains(@id,'email')]
+===================================================================..
+
+
