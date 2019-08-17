@@ -80,5 +80,27 @@ Automation browser session:-->
 
 	       		//*[contains(@id,'email')]
 ===================================================================..
+Example:--> Identify Location when Element Location duplicated at webpage..
+
+Recognize duplicate objects at webpage
+		
+		Syntax:-->
+					(xpath expression)[int position]							
+--->Html Source--------->   
+
+<html>
+<body>
+		<div id="reg_login"  class="form">
+				<input id="email" type="text"></input>
+		</div>
+	
+		<div id="reg_login"  class="form">
+				<input id="email" type="text"></input>  ------>>>>TargetElement
+		</div>
+</body>
+</html>		
+
+ Syntax:-->
+ 		   by.xpath("(//input[@id='email'])[2]");
 
 

@@ -13,11 +13,12 @@ Recognize object with unique attributes
 Syntax:-->
 		//tagname[@property='propertyvalue']
 
-		//input[@id='email']
+		By.xpath("//input[@id='email']")
 -------------------------------------------------------------------
 
-Example1:--->
-Recognize object using parent node. When parent node having Single Child node.
+Example2:--->
+Recognize object using parent node. 
+When parent node having Single Child node.
 ------------->Html Source--------->   
 
 <html>
@@ -33,12 +34,12 @@ Recognize object using parent node. When parent node having Single Child node.
 </html>
 
 Syntax:--->
-		//parenttagname[@property='pvalue']/childtagname
+		parentNode/childtagname
 		
-		//div[@id='reg_login']/input
+		By.xpath("//div[@id='reg_login']/input")
 
 ------------------------------------------------------------------------
-Example2:-->
+Example3:-->
 Recognize object when parent element having Group child element
 ------------->Html Source--------->   
 
@@ -58,32 +59,10 @@ Recognize object when parent element having Group child element
 syntax:-->
 		//parentagname[property='propertyvalue']/childtagname[prop='propvalue']
 		
-		//div[@id='reg_login']/input[@type='text']
---------------------------------------------------------------------------
-Example:--> Absolute xpath  [Identify location using position]
-	
-HtmlSource:-->
-
-	<html>
-		<body>
-				<div id="reg_login"  class="form">
-							<input id="email" type="text"></input>
-				</div>
-	
-				<div id="reg_login"  class="form">
-							<input id="sample" class="abc"></input>
-							<input id="email" type="text"></input>  ------>>>>TargetElement	
-				</div>
-		</body>
-	</html>			
-		
-		Syntax:--> 
-				tagname[int position]
+		By.xpath("//div[@id='reg_login']/input[@type='text']")
 			
-			/html/body/div[2]/input[2]
-		
 --------------------------------------------------------------------	
-Example3:-->
+Example4:-->
 Recognize object when parent-element having duplicate child-elements
 Htmlsource:--->
 
@@ -101,8 +80,32 @@ Htmlsource:--->
 Xpath position:-->
 			//parenttagname[@prop='propvalue']/childtagname[int pos]
 		
-			
+			By.xpath("//div[@id='reg_login']/input[2]")
+			By.cssSelector("div[@id='reg_login'] > input:nth-child(2)")
 -------------------------------------------------------------------------
+Example:--> Absolute xpath  [Identify location using position]
+	
+HtmlSource:-->
+
+	<html>
+		<body>
+				<div id="reg_login"  class="form">
+						<input id="email" type="text"></input>
+				</div>
+	
+				<div id="reg_login"  class="form">
+						<input id="sample" class="abc"></input>
+						<input id="email" type="text"></input>  ------>>>>TargetElement	
+				</div>
+		</body>
+	</html>			
+		
+		Syntax:--> 
+				tagname[int position]
+				
+				By.xpath("/html/body/div[2]/input[2]")     --> Absolute
+				By.xpath("//input[2]")                     --> Xpath index          
+----------------------------------------------------------------
 Example4:-->
 Recognize object with multiple attributes[using <AND> comparision]
 
@@ -199,13 +202,13 @@ HtmlSource:-->
 
 		<div class="origin">
 				<input id="firstname" name="new">
-				<div class="origin">            --------------------------->Target Element
+				<div class="origin">           ------->Target Element
 		</div>
 		
 	Syntax:-->
 			//SiblingElement/following-sibling::tagname
 		
-		   
+		   by.xpath("//input[@id='firstname']/following-sibling::div")
 		
 --------------------------------------------------------------------------------		
 Example9:-->
@@ -222,7 +225,9 @@ HtmlSource:-->
 		</div>	
 		
 		
-	
+			By.xpath("//input[@id='firstname']/following-sibling::div[2]")
+		    By.xpath("//li[@class='roundtrip']/following-sibling::div")
+		
 ---------------------------------------------------------------------------
 Example9:-->
 		Recognize object using preceding sibling
@@ -238,10 +243,10 @@ HtmlSource:-->
 	Syntax:-->
 			//SiblingElement/preceding-sibling::tagname
 		
-	
+	    By.xpath(//input[@id='firstname']/preceding-sibling::div")
 		
 --------------------------------------------------------------------------------		
-Example9:-->
+Example10:-->
 		Recognize object using preceding sibling. When multiple Element Available
 
 HtmlSource:-->
@@ -256,6 +261,7 @@ HtmlSource:-->
 		
 		
 		syntax:-->
+				By.xpath("//input[@id='firstname']/preceding-sibling::div[2]")
 
 
 
