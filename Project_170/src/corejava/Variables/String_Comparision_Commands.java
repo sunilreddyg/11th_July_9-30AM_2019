@@ -49,11 +49,71 @@ public class String_Comparision_Commands
 		System.out.println("Sub Strign Available Status is => "+flag2);
 		
 		
+		/*
+		 * subString:-->
+		 * 		  Method get sub String from main String.
+		 */
+		String Account_num="00001234565656";
+		String AccountID=Account_num.substring(8);
+		System.out.println("last 6 digit numbers => "+AccountID);
 		
+		String Account_Middle=Account_num.substring(4, 8);
+		System.out.println("middle digits are => "+Account_Middle);
 		
-		
-		
+	
+		/*
+		 * length:--> 
+		 * 		Method return characters count available at string.
+		 */
+		String Mobile="9030248855";
+		int len=Mobile.length();
+		System.out.println("mobile num available in digits => "+len);
 
+		
+		/*
+		 * trim:--> 
+		 * 		method trim extra spaces with in string [Left and right space]
+		 */
+		String Pincode="   500074    ";
+		int Before_trim=Pincode.length();
+		System.out.println("Before trim count is => "+Before_trim);
+		
+		int AfterTrim=Pincode.trim().length();
+		System.out.println("After trim count is => "+AfterTrim);
+		
+	
+		/*
+		 * isEmpty:-->
+		 * 			method verify string empty status and return 
+		 * 			boolean value true/false
+		 */
+		String var="";
+		String var1="Hello";
+		
+		System.out.println("Var empty status is => "+var.isEmpty());
+		System.out.println("Var1 empty status is => "+var1.isEmpty());
+		
+		
+		
+		/*
+		 * startswith:-->
+		 * 		Method verify stored characters starts with
+		 * 		expected sequence and return boolean value true/false
+		 */
+		String IFSC_Code="HDFC000012";
+		boolean flag3=IFSC_Code.startsWith("HDFC");
+		System.out.println("Starts with status is => "+flag3);
+		
+		
+		/*
+		 * toLowerCase:-->
+		 * 		method convert any uppercase characters available
+		 * 		at strign into lowercase characters.
+		 */
+		String toolname="WEBDRIVER";
+		String New_tool_name=toolname.toLowerCase();
+		System.out.println("toolname in lower case => "+New_tool_name);
+		
 	}
 
 }
