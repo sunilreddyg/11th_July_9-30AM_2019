@@ -106,7 +106,7 @@ getText:--->
 ======================================================>>
 getAttribute("propertyname");
 	
-		Method capture runtime attribute value using attributename.
+	Method capture runtime attribute value using attributename.
 				  
 				  
 		Syntax:-->  
@@ -115,10 +115,10 @@ getAttribute("propertyname");
 		  	System.out.println(value);	
 		  	
 				  	
-		  	Note:--> Developer use attributes, to chanage runtime
-		  			behaviour of element. by capture element attributes
-		  			at runtime we can prove element behaviour available
-					w.r.t client requirement.
+  	Note:--> Developer use attributes, to chanage runtime
+  			behaviour of element. by capture element attributes
+  			at runtime we can prove element behaviour available
+			w.r.t client requirement.
 		  	
 Example:-->
 			   Captrue editbox input value.

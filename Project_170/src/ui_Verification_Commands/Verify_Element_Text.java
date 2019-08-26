@@ -35,7 +35,11 @@ public class Verify_Element_Text {
 		
 		String Exp_text="Sorry, but we can't continue until you fix everything that's marked in RED";
 		
-		
+		//Verify Expected and acutal text
+		if(Runtime_text.equals(Exp_text))
+			System.out.println("Testpass:--> As expected error message displayed");
+		else
+			System.out.println("Testfail:--> Expected error message not displayed at webpage");
 		
 	}
 
