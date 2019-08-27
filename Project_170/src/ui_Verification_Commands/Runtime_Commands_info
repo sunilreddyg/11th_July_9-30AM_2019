@@ -121,7 +121,7 @@ getAttribute("propertyname");
 			w.r.t client requirement.
 		  	
 Example:-->
-			   Captrue editbox input value.
+			    Captrue editbox input value.
 			   
 			   	Syntax:-->  
 			   	//Identify Editbox
@@ -132,20 +132,23 @@ Example:-->
 				System.out.println(InputData);	
 ==============================================================		
 getCssvalue:-->
-			Method capture selected element styles at webpages.
-						font
-						font-size
-						color
-						background-color
-						alignment
-									
-				Syntax:-->
-				
-					//Identify Element
-					WebElement Element=driver.findElement(By.id("x"));
+		Method capture selected element styles at webpages.
+					font
+					font-size
+					color
+					background-color
+					alignment
 					
-					String text_font_size=Element.getCssvalue("font-size");	
-					System.out.println(text_font_size);
+		Note:--> Color & Background color retreive in RGBA format
+					[RED GREEN BLUE ALPHA]
+									
+	Syntax:-->
+	
+		//Identify Element
+		WebElement Element=driver.findElement(By.id("x"));
+		
+		String text_font_size=Element.getCssvalue("font-size");	
+		System.out.println(text_font_size);
 ===================================================getTagname:-->
 getTagname():-->>
 	
