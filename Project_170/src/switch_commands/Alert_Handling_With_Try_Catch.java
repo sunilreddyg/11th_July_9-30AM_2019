@@ -29,7 +29,7 @@ public class Alert_Handling_With_Try_Catch {
 		
 		//Identify location
 		WebElement Search_button=driver.findElement(By.xpath("//input[@value='Search']"));
-		//Search_button.click();
+		Search_button.click();
 		Thread.sleep(5000); //Static timeout
 		
 		
