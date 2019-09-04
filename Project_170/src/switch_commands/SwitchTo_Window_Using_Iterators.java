@@ -34,11 +34,15 @@ public class SwitchTo_Window_Using_Iterators
 		
 		//Each iterator we can access by next keyword
 		String MainWindow=itr.next();
-	
+		String Seat_Availablity=itr.next();
+		String PNR_Status=itr.next();
 		
-		String W2=itr.next();
-		driver.switchTo().window(W2);
-		System.out.println("W2 title is => "+driver.getTitle());
+		
+		driver.switchTo().window(PNR_Status);
+		System.out.println("PNRstatus window title is => "+driver.getTitle());
+		
+		driver.switchTo().window(Seat_Availablity);
+		System.out.println("Seat availability window title is => "+driver.getTitle());
 		
 	}
 
