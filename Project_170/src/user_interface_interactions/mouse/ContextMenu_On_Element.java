@@ -1,4 +1,4 @@
-package mosue_and_keyboard_interaction;
+package user_interface_interactions.mouse;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
