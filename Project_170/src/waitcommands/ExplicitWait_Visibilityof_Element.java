@@ -1,16 +1,17 @@
 package waitcommands;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ExplicitWait_Visibilityof_Element {
+public class ExplicitWait_Visibilityof_Element 
+{
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		
 		System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe");
 		//browser initiation

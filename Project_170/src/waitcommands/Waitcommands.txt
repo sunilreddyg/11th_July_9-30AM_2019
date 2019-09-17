@@ -104,7 +104,8 @@ titleIs:--->
 				WebdriverWait  wait=new WebDriverwait(driver,100);
 				wait.until(ExpectedConditions.titleis("Expected page title"));
 				
-				
+================================================================================
+			
 titleContains:-->
 		An expecation to verify expected or parital title presented...
 				
@@ -118,6 +119,7 @@ titleContains:-->
 
 			WebdriverWait  wait=new WebDriverwait(driver,100);
 			wait.until(ExpectedConditions.titleContais("title or partial title"));
+=====================================================================================
 			
 urltobe:--->
 		An expecation to verify expected url presented at webpage
@@ -133,7 +135,8 @@ urltobe:--->
 
 			WebdriverWait  wait=new WebDriverwait(driver,100);
 			wait.until(ExpectedConditions.urltobe("Expectdurl"));	
-			
+=====================================================================================
+		
 urlcontains:--->
 
 		urlcontains command without Webdriverwait:----->
@@ -146,56 +149,92 @@ urlcontains:--->
 
 			WebdriverWait  wait=new WebDriverwait(driver,100);
 			wait.until(ExpectedConditions.urlcontains("Expectdurl_or_partial"));
+====================================================================================
 			
 visibilityOfElementLocated:-->
 
 		An expectation to verify expected element visible at webpage	
 			
+Example:--> Manage Explicit wait until element visible at webpage.
+		
 		WebdriverWait  wait=new WebDriverwait(driver,100);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("x")));
+=================================================================================
+
+InvisiblityofElementLocated:-->
+		An expectation to verify, Required element invisible at webpae
+
+Example:--> Manage explicitwait until expected element hide from webpage
+
+		WebdriverWait  wait=new WebDriverwait(driver,100);
+		wait.until(ExpectedConditions.InvisibilityOfElementLocated(By.id("x")));	
+================================================================================
+PresenceofElementLocated:-->
+		An expecation to verify expected element source available at backend
+		htmlsource   [Document object model]
+
+Example:--> Manage explicitwait until expected object found at DOM.
+
+		WebdriverWait  wait=new WebDriverwait(driver,100);
+		wait.until(ExpectedConditions.PresenceOfElementLocated(By.id("x")));
+===============================================================================
+ElementTobeClickable:-->
+		An Expecation to verify element is clickable.[Buttons,Links --etc]
+		->use on exception [Element not clickable position]
+Example:-->
+		manage explicit wait until element receive enable state to perform actions.
+		
+		WebdriverWait  wait=new WebDriverwait(driver,100);
+		wait.until(ExpectedConditions.ElementTobeClickable(By.id("x")));
+===============================================================================		
 	
 textToBePresentInElementLocated:--->
 	An expectation to verify text presented at selected Element..
-		
+	
+	
+Example:--> manage explicitwait until expected text located at element
+	
 	WebdriverWait  wait=new WebDriverwait(driver,100);
 	wait.until(ExpectedConditions.textToBePresentInElementLocated
 						(By.id("x"),"Expected Text"));
-							
+================================================================================													
 textToBePresentInElementValue:--->
 	An expecation to verify expected input presented at editbox...
 
+
+Example:--> manage explicitwait until expected input presented at editbox.
+
 	WebdriverWait  wait=new WebDriverwait(driver,100);
 	wait.until(ExpectedConditions.textToBePresentInElementValue
-					(By.id("x"),"inputvalue"));
-				
-	
-attributeContains:-->
-	   An expecation to verify expected arrtibute contains at webelemnt...	
-	
-		WebdriverWait  wait=new WebDriverwait(driver,100);
-		wait.until(ExpectedConditions.attributeContains(By.id("x"),"attributename","attributevalue"));
-				
-	
+					(By.id("x"),"Exp inputvalue"));
+
+=========================================================================
+
 Alertpresented:-->
 	  An expectatino to verify alert presented at webpage.
 	  
 	  WebdriverWait  wait=new WebDriverwait(driver,100);
 	  wait.until(ExpectedConditions.Alertpresented()).accept();	
-			
-			
+====================================================================
+				
 frametobeavailableAndSwitchToIt:-->
 	An expecation to verify expected frame loaded at webpage.
 	
 	WebdriverWait  wait=new WebDriverwait(driver,100);
 	wait.until(ExpectedConditions.FrameTobeAvailableAndSwitchtoIt(By FrameLocator));
-				
+
+======================================================================		
 NumberofWindowsTobe:-->
 	
 	WebdriverWait  wait=new WebDriverwait(driver,100);
 	wait.until(ExpectedConditions.NumberofWindowsTobe(int num));
+							
+======================================================================
+ElementSelectionStateTobe:-->
+	An Expecation to verity selected element Selection status is true/false.
+	[Helps to verify selection state for radio button and chekcboxes..]
 				
-			
-			
-			
+	WebdriverWait  wait=new WebDriverwait(driver,100);
+	wait.until(ExpectedConditions.ElementSelectionStateTobe(by.id("x"), boolean true/false));		
 			
 
