@@ -1,0 +1,40 @@
+Looping is a programming language feature 
+which facilitates the execution of a set of instructions/functions 
+repeatedly, while some condition evaluates to true.
+
+1. For
+2. While
+3. do-while
+4. Foreach
+
+Advantges of loops:-->
+	=> Reduce lines of code
+	=> We can evaluate any particular condition repeatedly
+		with multiple set of data/ instructions.
+
+===========================================================
+
+1. Forloop:-->
+		for continue iteration until meet expected range.
+		
+		
+		
+		for(int i=0; i < 10  ; i++)
+		{
+		
+		}
+		
+===============================================================		
+2. ForEach:-->
+		Foreach read array and iterator next values..
+		
+		
+		for(Variabletype VariableName  : Arrayname)
+		{
+		
+		}
+		
+		
+		
+		
+
