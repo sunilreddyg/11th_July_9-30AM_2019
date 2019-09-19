@@ -1,0 +1,15 @@
+Collection : Collections store set of events and allow manipulations
+			 with basic methods like 
+			 add(), remove(), contains(), isEmpty(), addAll(),Size(),.. etc.
+ 
+Set:-->
+	 Doesn't allow duplicates and elements are not-order.  
+List:--> 
+	 Can contain duplicates and elements are ordered. 
+	 	 
+Map:-->
+	 Contains Key value pairs. Doesn't allow duplicates.  
+Note:-->
+The difference between Set and Map interface is that in Set we 
+have only keys, whereas in Map, we have key, value pairs.
+
