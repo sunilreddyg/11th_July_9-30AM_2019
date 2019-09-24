@@ -26,7 +26,6 @@ public class Run_Search_Flight_Methods
 		//To Identify @FindBy elements we need to create object for Page-factory class.
 		Search_Flights Sflight=PageFactory.initElements(driver, Search_Flights.class);
 		
-		
 		/*
 		 * Testcase:--> Verify Home Error msg displayed on empty Search
 		 */
