@@ -3,6 +3,8 @@ package pageobjects.Without_pageFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import method_parameters.Repository;
+
 public class FB_SignIn
 {
 	  WebDriver driver;
@@ -30,6 +32,9 @@ public class FB_SignIn
 		 driver.findElement(Password).sendKeys(PWD);
 		 
 		 driver.findElement(Login_btn).click();
+		 
 	  }
+	  
+	
 	
 }
