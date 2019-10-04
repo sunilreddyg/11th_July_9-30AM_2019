@@ -7,7 +7,8 @@ import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class Read_Numeric_Data_From_Cell {
+public class Read_Numeric_Data_From_Cell 
+{
 
 	public static void main(String[] args) throws IOException 
 	{
@@ -51,7 +52,11 @@ public class Read_Numeric_Data_From_Cell {
 		System.out.println("Mobile number in String format => "+Mobile_in_String_fmt);
 		
 		
-		//Read alternate mobile number
+		/*
+		 * Read alternate mobile number using string format.
+			[Before retrieving String value,Covert Cell type as 
+			String by adding single code  '9030248855]
+		 */		
 		String Alternate_mobile=sht.getRow(1).getCell(5).getStringCellValue();
 		System.out.println("Alternate mobile number is => "+Alternate_mobile);
 		
