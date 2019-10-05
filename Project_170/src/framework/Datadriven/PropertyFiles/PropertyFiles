@@ -1,0 +1,17 @@
+Property Files:-->
+	Property files also called as repository files.
+	In java programming property files store information
+	using keyname and value.
+	
+				key=value
+				
+	Note:--> Property files are sub version of hashtables.
+	It store pair values using "key" and "value" format.
+	===================================
+			
+create property file:-->
+	
+			=> Create file with .properties extension
+			=> Store data using key and value format.
+==========================================>>
+				
