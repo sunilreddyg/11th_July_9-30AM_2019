@@ -28,5 +28,6 @@
 	<classpathentry kind="lib" path="C:/Users/Administrator/Downloads/opencsv-3.3.jar"/>
 	<classpathentry kind="lib" path="D:/sunill/11th_July_9-30_2019/selenium_libraries/extentreports-2.41.2.jar"/>
 	<classpathentry kind="lib" path="D:/sunill/11th_July_9-30_2019/selenium_libraries/freemarker-2.3.23.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
