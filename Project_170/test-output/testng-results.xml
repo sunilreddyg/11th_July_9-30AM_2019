@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" total="8" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[tc005  Executed]]>
+    </line>
+    <line>
+      <![CDATA[tc004  Executed]]>
+    </line>
+    <line>
+      <![CDATA[Tc008 executed]]>
+    </line>
+  </reporter-output>
+  <suite name="default" duration-ms="47" started-at="2019-10-13T06:29:48Z" finished-at="2019-10-13T06:29:48Z">
+    <groups>
+      <group name="G1">
+        <method signature="TestSuite1.tc001()[pri:0, instance:framework_testng.Groups.TestSuite1@721e0f4f]" name="tc001" class="framework_testng.Groups.TestSuite1"/>
+        <method signature="TestSuite1.tc002()[pri:0, instance:framework_testng.Groups.TestSuite1@721e0f4f]" name="tc002" class="framework_testng.Groups.TestSuite1"/>
+        <method signature="TestSuite2.tc005()[pri:0, instance:framework_testng.Groups.TestSuite2@6ad5c04e]" name="tc005" class="framework_testng.Groups.TestSuite2"/>
+        <method signature="TestSuite3.tc007()[pri:0, instance:framework_testng.Groups.TestSuite3@6833ce2c]" name="tc007" class="framework_testng.Groups.TestSuite3"/>
+      </group> <!-- G1 -->
+      <group name="G2">
+        <method signature="TestSuite1.tc001()[pri:0, instance:framework_testng.Groups.TestSuite1@721e0f4f]" name="tc001" class="framework_testng.Groups.TestSuite1"/>
+        <method signature="TestSuite3.tc009()[pri:0, instance:framework_testng.Groups.TestSuite3@6833ce2c]" name="tc009" class="framework_testng.Groups.TestSuite3"/>
+        <method signature="TestSuite1.tc003()[pri:0, instance:framework_testng.Groups.TestSuite1@721e0f4f]" name="tc003" class="framework_testng.Groups.TestSuite1"/>
+        <method signature="TestSuite2.tc004()[pri:0, instance:framework_testng.Groups.TestSuite2@6ad5c04e]" name="tc004" class="framework_testng.Groups.TestSuite2"/>
+        <method signature="TestSuite3.tc008()[pri:0, instance:framework_testng.Groups.TestSuite3@6833ce2c]" name="tc008" class="framework_testng.Groups.TestSuite3"/>
+      </group> <!-- G2 -->
+      <group name="G3">
+        <method signature="TestSuite1.tc001()[pri:0, instance:framework_testng.Groups.TestSuite1@721e0f4f]" name="tc001" class="framework_testng.Groups.TestSuite1"/>
+      </group> <!-- G3 -->
+    </groups>
+    <test name="defult" duration-ms="47" started-at="2019-10-13T06:29:48Z" finished-at="2019-10-13T06:29:48Z">
+      <class name="framework_testng.Groups.TestSuite3">
+        <test-method status="FAIL" signature="tc007()[pri:0, instance:framework_testng.Groups.TestSuite3@6833ce2c]" name="tc007" duration-ms="0" started-at="2019-10-13T11:59:48Z" finished-at="2019-10-13T11:59:48Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at framework_testng.Groups.TestSuite3.tc007(TestSuite3.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc007 -->
+        <test-method status="PASS" signature="tc008()[pri:0, instance:framework_testng.Groups.TestSuite3@6833ce2c]" name="tc008" duration-ms="0" started-at="2019-10-13T11:59:48Z" finished-at="2019-10-13T11:59:48Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Tc008 executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc008 -->
+        <test-method status="SKIP" signature="tc009()[pri:0, instance:framework_testng.Groups.TestSuite3@6833ce2c]" name="tc009" duration-ms="0" depends-on-groups="G1" started-at="2019-10-13T11:59:48Z" finished-at="2019-10-13T11:59:48Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestSuite3.tc009()[pri:0, instance:framework_testng.Groups.TestSuite3@6833ce2c] depends on not successfully finished methods in group "G1"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestSuite3.tc009()[pri:0, instance:framework_testng.Groups.TestSuite3@6833ce2c] depends on not successfully finished methods in group "G1"
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc009 -->
+      </class> <!-- framework_testng.Groups.TestSuite3 -->
+      <class name="framework_testng.Groups.TestSuite2">
+        <test-method status="PASS" signature="tc004()[pri:0, instance:framework_testng.Groups.TestSuite2@6ad5c04e]" name="tc004" duration-ms="0" started-at="2019-10-13T11:59:48Z" finished-at="2019-10-13T11:59:48Z">
+          <reporter-output>
+            <line>
+              <![CDATA[tc004  Executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc004 -->
+        <test-method status="PASS" signature="tc005()[pri:0, instance:framework_testng.Groups.TestSuite2@6ad5c04e]" name="tc005" duration-ms="0" started-at="2019-10-13T11:59:48Z" finished-at="2019-10-13T11:59:48Z">
+          <reporter-output>
+            <line>
+              <![CDATA[tc005  Executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc005 -->
+      </class> <!-- framework_testng.Groups.TestSuite2 -->
+      <class name="framework_testng.Groups.TestSuite1">
+        <test-method status="PASS" signature="tc002()[pri:0, instance:framework_testng.Groups.TestSuite1@721e0f4f]" name="tc002" duration-ms="0" started-at="2019-10-13T11:59:48Z" finished-at="2019-10-13T11:59:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc002 -->
+        <test-method status="PASS" signature="tc001()[pri:0, instance:framework_testng.Groups.TestSuite1@721e0f4f]" name="tc001" duration-ms="0" started-at="2019-10-13T11:59:48Z" finished-at="2019-10-13T11:59:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001 -->
+        <test-method status="PASS" signature="tc003()[pri:0, instance:framework_testng.Groups.TestSuite1@721e0f4f]" name="tc003" duration-ms="0" started-at="2019-10-13T11:59:48Z" finished-at="2019-10-13T11:59:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc003 -->
+      </class> <!-- framework_testng.Groups.TestSuite1 -->
+    </test> <!-- defult -->
+  </suite> <!-- default -->
+</testng-results>
