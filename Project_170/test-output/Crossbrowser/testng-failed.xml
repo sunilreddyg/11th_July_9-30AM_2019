@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Crossbrowser]">
+  <test name="chrome">
+    <classes>
+      <class name="framework_testng.BeforeTest_and_AfterTest.TestSuite1"/>
+      <class name="framework_testng.BeforeTest_and_AfterTest.TestSuite2"/>
+      <class name="framework_testng.BeforeTest_and_AfterTest.Test_for_Chrome"/>
+    </classes>
+  </test> <!-- chrome -->
+  <test name="firefox">
+    <classes>
+      <class name="framework_testng.BeforeTest_and_AfterTest.TestSuite1"/>
+      <class name="framework_testng.BeforeTest_and_AfterTest.TestSuite2"/>
+      <class name="framework_testng.BeforeTest_and_AfterTest.Test_For_Firefox"/>
+    </classes>
+  </test> <!-- firefox -->
+</suite> <!-- Failed suite [Crossbrowser] -->

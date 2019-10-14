@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [deafult]" parallel="tests">
+  <parameter name="appurl" value="http://cleartrip.com"/>
+  <test verbose="2" name="test1">
+    <classes>
+      <class name="framework_testng.CrossBrowser.CrossBrowser_Test">
+        <parameter name="browsername" value="chrome"/>
+      </class> <!-- framework_testng.CrossBrowser.CrossBrowser_Test -->
+    </classes>
+  </test> <!-- test1 -->
+  <test verbose="2" name="test2">
+    <classes>
+      <class name="framework_testng.CrossBrowser.CrossBrowser_Test">
+        <parameter name="browsername" value="firefox"/>
+      </class> <!-- framework_testng.CrossBrowser.CrossBrowser_Test -->
+    </classes>
+  </test> <!-- test2 -->
+</suite> <!-- Failed suite [deafult] -->
