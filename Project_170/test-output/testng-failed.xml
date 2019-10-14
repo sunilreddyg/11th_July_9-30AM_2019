@@ -1,44 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [default]">
-  <groups>
-    <run>
-      <include name="G1"/>
-      <include name="G2"/>
-    </run>
-  </groups>
-  <test verbose="2" name="defult">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
-      <class name="framework_testng.Groups.TestSuite1"/>
-      <class name="framework_testng.Groups.TestSuite2"/>
-      <class name="framework_testng.Groups.TestSuite3"/>
+      <class name="framework_testng.DP.DataProvider_With_Excel_Intergration"/>
     </classes>
-  </test> <!-- defult -->
-  <test name="defult(failed)">
-    <groups>
-      <run>
-        <include name="G1"/>
-        <include name="G2"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="framework_testng.Groups.TestSuite1">
-        <methods>
-          <include name="tc001"/>
-          <include name="tc002"/>
-        </methods>
-      </class> <!-- framework_testng.Groups.TestSuite1 -->
-      <class name="framework_testng.Groups.TestSuite3">
-        <methods>
-          <include name="tc009"/>
-          <include name="tc007"/>
-        </methods>
-      </class> <!-- framework_testng.Groups.TestSuite3 -->
-      <class name="framework_testng.Groups.TestSuite2">
-        <methods>
-          <include name="tc005"/>
-        </methods>
-      </class> <!-- framework_testng.Groups.TestSuite2 -->
-    </classes>
-  </test> <!-- defult(failed) -->
-</suite> <!-- Failed suite [default] -->
+  </test> <!-- Default test -->
+</suite> <!-- Failed suite [Default suite] -->
